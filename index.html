@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anupam's Internship Diary: Data Engineer @ OCBC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kalam:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="story" id="story">
+
+  <div class="story-progress" id="storyProgress"></div>
+
+  <button class="tap-zone tap-left" id="tapLeft" aria-label="Previous chapter"></button>
+  <button class="tap-zone tap-right" id="tapRight" aria-label="Next chapter"></button>
+
+  <div class="story-hint mono" id="storyHint">drag → / tap edges / arrow keys</div>
+
+  <div class="story-viewport" id="storyViewport">
+
+    <section class="chapter cover-chapter" data-title="Cover">
+      <div class="deco deco-lg deco-tl" style="--rot:-8deg;"><img src="assets/doodles/pushpin.svg" alt=""></div>
+      <div class="deco deco-tr" style="--rot:10deg;"><img src="assets/doodles/star.svg" alt=""></div>
+      <div class="deco deco-sm deco-bl" style="--rot:0deg;"><img src="assets/doodles/sparkle.svg" alt=""></div>
+      <div class="deco deco-mr" style="top:30%; --rot:-6deg;"><img src="assets/doodles/paperclip.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <div class="cover-tape tape tape-yellow rotate-2">EST. INTERNSHIP</div>
+        <div class="polaroid cover-polaroid rotate-neg3">
+          <img src="profile.jpg" alt="Portrait of Anupam P Menon">
+          <p class="polaroid-caption handwrite">that's me!</p>
+        </div>
+        <h1 class="cover-title">Anupam's<br>Internship<br>Diary</h1>
+        <p class="cover-sub mono">DATA ENGINEER · OCBC ENTERPRISE DATA</p>
+        <p class="cover-thesis">I build the pipelines &amp; dashboards that turn messy raw data into decisions people actually trust. This is the scrapbook version of that story.</p>
+        <div class="cover-links">
+          <a href="mailto:ammasanupam@gmail.com" class="sticker-btn">✉ email me</a>
+          <a href="https://www.linkedin.com/in/anupam-menon" target="_blank" rel="noopener" class="sticker-btn">🔗 linkedin</a>
+        </div>
+        <div class="cover-swipe-cue handwrite">swipe / click to start →</div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Intro">
+      <div class="deco deco-tr" style="--rot:12deg;"><img src="assets/doodles/pushpin.svg" alt=""></div>
+      <div class="deco deco-bl" style="--rot:-10deg;"><img src="assets/doodles/paperclip.svg" alt=""></div>
+      <div class="deco deco-lg deco-br" style="--rot:6deg;"><img src="assets/doodles/database.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 01</p>
+        <h2 class="chapter-heading handwrite">who / where / what</h2>
+        <div class="corkboard">
+          <div class="index-card rotate-neg2 pin-yellow">
+            <span class="card-label mono">ROLE</span>
+            <p>Data Engineer Intern, 1 year Guided Work-Based Learning</p>
+          </div>
+          <div class="index-card rotate-2 pin-pink">
+            <span class="card-label mono">COMPANY</span>
+            <p>OCBC Bank, Enterprise Data, inside Group Operations &amp; Technology (GO&amp;T)</p>
+          </div>
+          <div class="index-card rotate-neg1 pin-blue">
+            <span class="card-label mono">JOB SCOPE</span>
+            <p>Requirements → mockup → SQL → data lake → test → automate. I own dashboards start to finish.</p>
+          </div>
+          <div class="index-card rotate-3 pin-green">
+            <span class="card-label mono">PROJECT(S)</span>
+            <p>A family of management dashboards used by Heads of Department and the Head of Group O&amp;T.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Nature of Work">
+      <div class="deco deco-lg deco-tl" style="--rot:-6deg;"><img src="assets/doodles/coffee-cup.svg" alt=""></div>
+      <div class="deco deco-mr" style="--rot:14deg;"><img src="assets/doodles/paperclip.svg" alt=""></div>
+      <div class="deco deco-sm deco-bl" style="--rot:0deg;"><img src="assets/doodles/sparkle.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 02</p>
+        <h2 class="chapter-heading handwrite">what the job looks like</h2>
+        <div class="sticky-board">
+          <div class="sticky-note note-yellow rotate-neg2">
+            <span class="note-tag mono">DAILY</span>
+            <p>Answer stakeholder questions, write &amp; debug SQL, check overnight pipeline runs didn't break.</p>
+          </div>
+          <div class="sticky-note note-pink rotate-2">
+            <span class="note-tag mono">WEEKLY</span>
+            <p>Review mockups &amp; live builds with business owners before anything touches production.</p>
+          </div>
+          <div class="sticky-note note-blue rotate-neg1">
+            <span class="note-tag mono">LONG-TERM</span>
+            <p>Own a dashboard end-to-end: first conversation to self-refreshing report nobody has to think about.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Pipeline">
+      <div class="deco deco-lg deco-tr" style="--rot:8deg;"><img src="assets/doodles/database.svg" alt=""></div>
+      <div class="deco deco-bl" style="--rot:-10deg;"><img src="assets/doodles/magnifying-glass.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 03</p>
+        <h2 class="chapter-heading handwrite">how a dashboard gets built</h2>
+        <p class="chapter-note handwrite">← drag the filmstrip →</p>
+        <div class="filmstrip-wrap" id="filmstripWrap">
+          <div class="filmstrip" id="filmstrip">
+            <div class="film-cell rotate-neg1">
+              <span class="film-num mono">01</span>
+              <h3>Requirements</h3>
+              <p>Sit with the business owner and work out what decision the dashboard needs to support.</p>
+            </div>
+            <div class="film-cell rotate-2">
+              <span class="film-num mono">02</span>
+              <h3>CSV Mockup</h3>
+              <p>Build it off a flat CSV first. Layout and metrics get argued over here, cheaply.</p>
+            </div>
+            <div class="film-cell rotate-neg2">
+              <span class="film-num mono">03</span>
+              <h3>SQL Logic</h3>
+              <p>CASE-based classification + UNION-based consolidation across source systems.</p>
+            </div>
+            <div class="film-cell rotate-1">
+              <span class="film-num mono">04</span>
+              <h3>Data Lake (Hue)</h3>
+              <p>Swap the CSV for the real source tables. Validate it still matches the mockup.</p>
+            </div>
+            <div class="film-cell rotate-neg1">
+              <span class="film-num mono">05</span>
+              <h3>Testing</h3>
+              <p>Chase down mismatches and edge dates the mockup never had to deal with.</p>
+            </div>
+            <div class="film-cell rotate-2 film-last">
+              <span class="film-num mono">06</span>
+              <h3>Production</h3>
+              <p>Scheduled, self-refreshing, zero human in the loop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Evidence">
+      <div class="deco deco-lg deco-tl" style="--rot:-8deg;"><img src="assets/doodles/camera.svg" alt=""></div>
+      <div class="deco deco-sm deco-ml" style="--rot:0deg;"><img src="assets/doodles/sparkle.svg" alt=""></div>
+      <div class="deco deco-mr" style="--rot:10deg;"><img src="assets/doodles/star.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 04</p>
+        <h2 class="chapter-heading handwrite">evidence of work</h2>
+        <p class="chapter-note handwrite">drag a photo to flip through the stack, tap to read the full story</p>
+        <div class="polaroid-deck" id="polaroidDeck"></div>
+        <div class="deck-dots mono" id="deckDots"></div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Skills">
+      <div class="deco deco-tr" style="--rot:12deg;"><img src="assets/doodles/magnifying-glass.svg" alt=""></div>
+      <div class="deco deco-bl" style="--rot:-8deg;"><img src="assets/doodles/star.svg" alt=""></div>
+      <div class="deco deco-lg deco-br" style="--rot:6deg;"><img src="assets/doodles/pushpin.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 05</p>
+        <h2 class="chapter-heading handwrite">skills &amp; level of competency</h2>
+        <p class="chapter-note handwrite">mapped to Skills Framework for ICT, Data Engineer track (double-check my levels against the official SFw before you submit this, future me)</p>
+        <div class="corkboard skills-cork">
+          <div class="index-card rotate-2 pin-yellow"><span class="card-label mono">L3 · DATA PIPELINE DEV</span><p>SQL that extracts, classifies &amp; consolidates records from multiple sources into one table.</p></div>
+          <div class="index-card rotate-neg1 pin-pink"><span class="card-label mono">L3 · DATA MODELLING</span><p>Common schema so regional tables reconcile cleanly via UNION.</p></div>
+          <div class="index-card rotate-1 pin-blue"><span class="card-label mono">L3 · BI DASHBOARD DESIGN</span><p>Turning a stakeholder's question into a live, decision-ready view.</p></div>
+          <div class="index-card rotate-neg2 pin-green"><span class="card-label mono">L2 · REQUIREMENTS</span><p>Structured conversations that scope a dashboard before any build starts.</p></div>
+          <div class="index-card rotate-3 pin-yellow"><span class="card-label mono">L2 · AUTOMATION</span><p>Deploy + schedule so reports refresh with zero manual work.</p></div>
+          <div class="index-card rotate-neg1 pin-pink ccs-card"><span class="card-label mono">CCS</span><p>Communication · Collaboration · Problem Solving · Sense-Making · Adaptability</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Reflection">
+      <div class="deco deco-tl" style="--rot:-10deg;"><img src="assets/doodles/coffee-cup.svg" alt=""></div>
+      <div class="deco deco-mr" style="--rot:8deg;"><img src="assets/doodles/paperclip.svg" alt=""></div>
+      <div class="deco deco-sm deco-br" style="--rot:0deg;"><img src="assets/doodles/sparkle.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 06</p>
+        <h2 class="chapter-heading handwrite">journal entries</h2>
+        <div class="diary-page rotate-neg1">
+          <span class="tape tape-blue rotate-2">challenges</span>
+          <p>I started this internship thinking I already knew the tools. That lasted about a week. What I'd learned in class was the tip of the iceberg. Enterprise rules aren't optional, and even the software I already knew, I was barely scratching the surface of. In school we used maybe 10% of what these tools can do. Here I had to learn to use them at full capacity.</p>
+          <p>The way through it was to stop assuming and start asking, and to map every unfamiliar process out (usually starting with a CSV mockup) instead of guessing at it.</p>
+        </div>
+        <div class="diary-page rotate-1">
+          <span class="tape tape-pink rotate-neg2">growth</span>
+          <p>I used to think six months of internship was "enough". A full year is a different kind of learning: living through the entire lifecycle (requirements, mockup, build, test, deploy, automate) more than once, on real systems, with real consequences. Not many people my age get that. Even with lower pay than a shorter internship, the experience has been worth more than the money, especially this early.</p>
+        </div>
+        <div class="diary-page rotate-neg2">
+          <span class="tape tape-yellow rotate-1">actions &amp; results</span>
+          <p>I moved from SQL that technically worked to SQL that held up under review. I moved from needing every step explained to independently gathering requirements, mocking up, and only then writing production logic. The result: dashboards that are actually live, on scheduled unattended refreshes, actually being used, not shelved after the demo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Accomplishments">
+      <div class="deco deco-lg deco-tl" style="--rot:-6deg;"><img src="assets/doodles/trophy.svg" alt=""></div>
+      <div class="deco deco-tr" style="--rot:12deg;"><img src="assets/doodles/star.svg" alt=""></div>
+      <div class="deco deco-sm deco-bl" style="--rot:0deg;"><img src="assets/doodles/sparkle.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 07</p>
+        <h2 class="chapter-heading handwrite">the part i'm proud of</h2>
+        <div class="stat-polaroid rotate-neg1">
+          <p class="stat-number">~30,000</p>
+          <p class="stat-label mono">people in the org my dashboards inform decisions for</p>
+        </div>
+        <p class="accomplishment-body">The most senior audience for my work is the Head of Group Operations &amp; Technology, along with the Heads of Department who review these dashboards directly. Knowing that something I helped build, from the first requirements conversation to the SQL behind it, is something a person at that level actually opens and relies on is a different kind of impact than any school project gave me. The Core Operations Processing executive dashboard is the clearest example: it's not a mockup anymore, it's in active use.</p>
+      </div>
+    </section>
+
+    <section class="chapter" data-title="Certificates">
+      <div class="deco deco-tl" style="--rot:-10deg;"><img src="assets/doodles/pushpin.svg" alt=""></div>
+      <div class="deco deco-lg deco-tr" style="--rot:8deg;"><img src="assets/doodles/trophy.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <p class="chapter-kicker mono">CH. 08</p>
+        <h2 class="chapter-heading handwrite">proof it happened</h2>
+        <p class="chapter-note handwrite">tap any certificate to zoom in</p>
+        <div class="certs-wall" id="certsWall">
+          <div class="cert-pin rotate-neg2" data-cert="0"><span class="tape tape-yellow">cert 01</span><img src="certs/cert-01.png" alt="Certificate 1" loading="lazy"><p class="cert-cap mono">tap to zoom</p></div>
+          <div class="cert-pin rotate-1" data-cert="1"><span class="tape tape-blue">cert 02</span><img src="certs/cert-02.png" alt="Certificate 2" loading="lazy"><p class="cert-cap mono">tap to zoom</p></div>
+          <div class="cert-pin rotate-neg1" data-cert="2"><span class="tape tape-pink">cert 03</span><img src="certs/cert-03.png" alt="Certificate 3" loading="lazy"><p class="cert-cap mono">tap to zoom</p></div>
+          <div class="cert-pin rotate-2" data-cert="3"><span class="tape tape-yellow">cert 04</span><img src="certs/cert-04.png" alt="Certificate 4" loading="lazy"><p class="cert-cap mono">tap to zoom</p></div>
+          <div class="cert-pin rotate-neg2" data-cert="4"><span class="tape tape-blue">cert 05</span><img src="certs/cert-05.png" alt="Certificate 5" loading="lazy"><p class="cert-cap mono">tap to zoom</p></div>
+        </div>
+        <p class="certs-note mono">more to be pinned up here as they come in</p>
+      </div>
+    </section>
+
+    <section class="chapter contact-chapter" data-title="Contact">
+      <div class="deco deco-lg deco-tl" style="--rot:-8deg;"><img src="assets/doodles/envelope.svg" alt=""></div>
+      <div class="deco deco-tr" style="--rot:10deg;"><img src="assets/doodles/star.svg" alt=""></div>
+      <div class="deco deco-sm deco-bl" style="--rot:0deg;"><img src="assets/doodles/sparkle.svg" alt=""></div>
+      <div class="chapter-scroll">
+        <div class="postcard rotate-neg1">
+          <p class="chapter-kicker mono">THE END (FOR NOW)</p>
+          <h2 class="chapter-heading handwrite">let's talk</h2>
+          <div class="cover-links">
+            <a href="mailto:ammasanupam@gmail.com" class="sticker-btn">✉ ammasanupam@gmail.com</a>
+            <a href="https://www.linkedin.com/in/anupam-menon" target="_blank" rel="noopener" class="sticker-btn">🔗 linkedin</a>
+          </div>
+          <p class="footer-note mono">Digital Portfolio · IND1 · Guided Work-Based Learning</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="modal" id="artifactModal">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-panel rotate-neg1">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
